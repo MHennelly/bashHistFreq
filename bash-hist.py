@@ -1,7 +1,7 @@
 import pandas as pd
 import os, re
 
-pd.set_option('display.max_rows', 100) # Modify this how you'd like
+pd.set_option('display.max_rows', 200) # Modify this how you'd like
 bashHistFile = open(os.environ['HOME'] + '/.bash_history')
 data = re.sub('[^A-Za-z0-9\-_@#$&*`~.]', ' ', bashHistFile.read()) # And this
 bashHistFile.close()
